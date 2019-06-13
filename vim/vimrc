@@ -18,7 +18,18 @@ call plug#begin('$XDG_DATA_HOME/vim/plugged')
 
 Plug 'tomasr/molokai'
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline-themes'
+Plug 'airblade/vim-gitgutter'
+Plug 'itchyny/lightline.vim'
+Plug 'scrooloose/nerdtree'
+
+" Should-be-default-vim
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'junegunn/vim-easy-align'
+
+" Missing langs (mostly for syn highlighting & indentation)
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 " }}}
@@ -53,6 +64,12 @@ augroup indent
     au FileType dart     setl ts=2 sts=2 sw=2 cino=m1
     au FileType haskell  setl formatprg=stylish-haskell
 augroup END
+
+" Lightline {{{
+let g:lightline = {
+    \ 'colorscheme': 'molokai',
+    \ }
+" }}}
 " }}}
 
 " Colors {{{
