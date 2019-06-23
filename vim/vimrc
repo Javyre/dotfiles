@@ -17,8 +17,6 @@ endif
 call plug#begin('$XDG_DATA_HOME/vim/plugged')
 
 Plug 'tomasr/molokai'
-Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
